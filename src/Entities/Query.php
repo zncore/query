@@ -3,8 +3,6 @@
 namespace ZnCore\Query\Entities;
 
 use ZnCore\Arr\Helpers\ArrayHelper;
-use ZnCore\Query\Entities\Join;
-use ZnCore\Query\Entities\Where;
 use ZnCore\Query\Enums\OperatorEnum;
 
 // todo: refactor
@@ -73,7 +71,7 @@ class Query
     public function getWith()
     {
 //        return $this->getParam(Query::WITH);
-        if(empty($this->with)) {
+        if (empty($this->with)) {
             return [];
         }
 
